@@ -6,7 +6,18 @@ class ReviewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: AppBar(
+        title: Text('Review'),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children:const [
+            Text('Tema'),
+            Text('Ejercicio'),
+            Text('Refuerzo')
+          ],
+        ),
+      ),
     );
   }
 }
