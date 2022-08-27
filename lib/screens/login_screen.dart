@@ -52,6 +52,11 @@ class LoginScreen extends StatelessWidget {
               ElevatedButton(
                   onPressed: (){
 
+                    LoginController service =  LoginController(context);
+                    service.Login(
+                        formValues['email'].toString(),
+                        formValues['password'].toString());
+
                     FocusScope.of(context).requestFocus(FocusNode());
 
                     if(!formKey.currentState!.validate()){

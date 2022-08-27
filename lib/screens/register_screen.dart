@@ -48,7 +48,12 @@ class RegisterScreen extends StatelessWidget {
               ElevatedButton(
                   onPressed: (){
                     LoginController usuarioService = LoginController(context);
-                    NewUser usuario = NewUser(nombre: nombre, apellido: apellido, correo: correo, password: password, tipo: tipo)
+                    usuarioService.Register(
+                        formValues['password'].toString(),
+                        formValues['first_name'].toString(),
+                        formValues['last_name'].toString(),
+                        formValues['email'].toString(),
+                        formValues['role'].toString());
 
                     FocusScope.of(context).requestFocus(FocusNode());
 
