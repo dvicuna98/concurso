@@ -4,16 +4,18 @@ import 'package:consurso/screens/screens.dart';
 
 class AppRoutes {
 
-  static const initialRoute = 'home';
+  static const initialRoute = 'login';
 
   static final menuOptions = <MenuOption>[
-      MenuOption(route: 'basicLogin', icon: Icons.stairs_outlined, name: 'Logica Basica', screen: const ReviewPage()),
-    
+
     ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes(){
     Map<String, Widget Function(BuildContext)> appRoutes = {};
     appRoutes.addAll({'home':(BuildContext context)=>const HomePage()});
+    appRoutes.addAll({'login':(BuildContext context)=>const LoginScreen()});
+    appRoutes.addAll({'register':(BuildContext context)=>const RegisterScreen()});
+    appRoutes.addAll({'review':(BuildContext context)=>const ReviewPage()});
 
     for (final option in menuOptions){
       appRoutes.addAll({option.route:(BuildContext context) => option.screen});
@@ -21,10 +23,6 @@ class AppRoutes {
 
     return appRoutes;
   }
-
-  static Map<String, Widget Function(BuildContext)> routes = {
-    'home': (BuildContext context) => const HomePage()
-  };
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings){
     return MaterialPageRoute(
