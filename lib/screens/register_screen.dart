@@ -1,3 +1,5 @@
+import 'package:consurso/controller/LoginController.dart';
+import 'package:consurso/models/NewUser.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/widgets.dart';
@@ -45,6 +47,8 @@ class RegisterScreen extends StatelessWidget {
               const SizedBox(height: 10,),
               ElevatedButton(
                   onPressed: (){
+                    LoginController usuarioService = LoginController(context);
+                    NewUser usuario = NewUser(nombre: nombre, apellido: apellido, correo: correo, password: password, tipo: tipo)
 
                     FocusScope.of(context).requestFocus(FocusNode());
 
