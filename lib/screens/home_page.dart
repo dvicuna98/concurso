@@ -79,11 +79,15 @@ class HomePage extends StatelessWidget {
                         children: [
                           TextButton(
                             child: const Text('Logica Basica'),
-                            onPressed: (){},
+                            onPressed: (){
+                              Navigator.of(context).pushNamed('review');
+                            },
                           ),
                           TextButton(
                             child: const Text('Tablas de verdad'),
-                            onPressed: (){},
+                            onPressed: (){
+                              Navigator.of(context).pushNamed('review');
+                            },
                           ),
                         ],
                     ),
@@ -102,15 +106,21 @@ class HomePage extends StatelessWidget {
                       children: [
                         TextButton(
                           child: const Text('Compuertas Logicas'),
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('review');
+                          },
                         ),
                         TextButton(
                           child: const Text('Conversion de circuitos a formas algebraicas'),
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('review');
+                          },
                         ),
                         TextButton(
                           child: const Text('Algebra de Boole'),
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('review');
+                          },
                         ),
                       ],
                     ),
@@ -129,15 +139,21 @@ class HomePage extends StatelessWidget {
                       children: [
                         TextButton(
                           child: const Text('Fundamentos de algoritmos'),
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('review');
+                          },
                         ),
                         TextButton(
                           child: const Text('Representacion textual'),
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('review');
+                          },
                         ),
                         TextButton(
                           child: const Text('Diagrama de flujo'),
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('review');
+                          },
                         ),
                       ],
                     ),
@@ -156,19 +172,27 @@ class HomePage extends StatelessWidget {
                       children: [
                         TextButton(
                           child: const Text('Variables y constantes'),
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('review');
+                          },
                         ),
                         TextButton(
                           child: const Text('Condicionales'),
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('review');
+                          },
                         ),
                         TextButton(
                           child: const Text('Operadores logicos'),
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('review');
+                          },
                         ),
                         TextButton(
                           child: const Text('Ciclos'),
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.of(context).pushNamed('review');
+                          },
                         ),
                       ],
                     ),
