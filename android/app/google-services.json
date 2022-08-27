@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "770381659928",
+    "project_id": "concurso-movil-d3bdf",
+    "storage_bucket": "concurso-movil-d3bdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770381659928:android:e51eb3fc7a54ae9b33a86d",
+        "android_client_info": {
+          "package_name": "com.example.consurso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770381659928-3v48tvs42b5clrohmtngslbtaf60i0fp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV0mlrmWAEyYOG4KeDYM-2XlcYd2-Ejvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770381659928-3v48tvs42b5clrohmtngslbtaf60i0fp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
